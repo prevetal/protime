@@ -1,0 +1,900 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 27px;
+    }
+
+
+
+    .swiper-pagination-bullet
+    {
+        width: 30px;
+    }
+
+    .swiper-pagination-bullet + .swiper-pagination-bullet
+    {
+        margin-left: 15px !important;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 15px 0;
+    }
+
+    .accordion_item .head .title
+    {
+        width: calc(100% - 31px);
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .links a.prev,
+    .pagination .links a.next
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Filter btn
+    ----------------*/
+    .filter_btn
+    {
+        margin-right: 19px;
+    }
+
+    .filter_btn .icon
+    {
+        margin: 0;
+    }
+
+    .filter_btn span,
+    .filter_btn .arr
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .search
+    {
+        position: static;
+    }
+
+
+    .mob_header .search .mini_modal,
+    .mob_header .search .mini_modal.active
+    {
+        top: 100%;
+
+        width: 100%;
+
+        border-top: 1px solid #d8d8d8;
+    }
+
+
+    .mob_header .search form .input
+    {
+        padding-right: 75px;
+        padding-left: 24px;
+    }
+
+    .mob_header .search form .submit_btn
+    {
+        right: 24px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_desc
+    {
+        font-size: 21px;
+    }
+
+
+    .page_head .links .swiper
+    {
+        padding: 0 50px;
+    }
+
+    .page_head .links .swiper-button-next,
+    .page_head .links .swiper-button-prev
+    {
+        display: flex;
+    }
+
+    .page_head .links .swiper-slide
+    {
+        position: relative;
+
+        visibility: hidden;
+
+        transition: opacity .2s linear, visibility .2s linear;
+        pointer-events: none;
+
+        opacity: 0;
+    }
+
+    .page_head .links .swiper-slide.visible
+    {
+        visibility: visible;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .page_head .links a:before
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of3
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .form .file
+    {
+        margin-top: 0;
+    }
+
+
+    .form .submit
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+    .form .agree
+    {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .swiper-slide
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .main_slider .cont
+    {
+        min-height: 0;
+        padding: 0;
+
+        order: 2;
+    }
+
+
+    .main_slider .data
+    {
+        width: 100%;
+        min-height: 204px;
+        padding: 24px 24px 68px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 27px;
+    }
+
+
+    .main_slider .product
+    {
+        display: none;
+
+        width: 100%;
+    }
+
+
+    .main_slider .bg
+    {
+        position: relative;
+
+        width: 200%;
+        margin: 0 -50%;
+
+        object-position: 50%;
+    }
+
+
+
+    /*-----------------
+        Collections
+    -----------------*/
+    .collections .collection .name
+    {
+        font-size: 26px;
+
+        width: 100%;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+
+
+    /*--------------------
+        New categories
+    --------------------*/
+    .new_categories .title
+    {
+        font-size: 27px;
+    }
+
+
+
+    /*---------------------
+        Promo guarantee
+    ---------------------*/
+    .promo_guarantee .data
+    {
+        width: 100%;
+        padding-right: 55px;
+    }
+
+
+    .promo_guarantee .title
+    {
+        font-size: 27px;
+    }
+
+
+
+    /*-----------------
+        Straps head
+    -----------------*/
+    .straps_head .title
+    {
+        font-size: 30px;
+    }
+
+
+
+    /*---------------
+        Selection
+    ---------------*/
+    .selection .title
+    {
+        font-size: 27px;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head .mob_sort
+    {
+        display: block;
+    }
+
+
+    .products_head .sort
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .products .row > *
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .block_title
+    {
+        font-size: 25px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .faq
+    {
+        margin-bottom: 70px;
+    }
+
+
+
+    /*---------------
+        Subscribe
+    ---------------*/
+    .subscribe .arr
+    {
+        display: none;
+    }
+
+
+    .subscribe form
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    .subscribe .agree
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+
+    /*------------------
+        Service head
+    -------------------*/
+    .service_head .title
+    {
+        font-size: 30px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row
+    {
+        margin-left: 0;
+    }
+
+    .services .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .title
+    {
+        font-size: 27px;
+    }
+
+
+    .contacts_info .socials
+    {
+        padding-left: 0;
+    }
+
+
+
+    /*---------------------
+        Service centers
+    ---------------------*/
+    .service_centers .centers_filter
+    {
+        margin-left: 0;
+    }
+
+    .service_centers .centers_filter > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------------
+        Service advantages
+    ------------------------*/
+    .service_advantages .row
+    {
+        margin-bottom: -24px;
+        margin-left: 0;
+    }
+
+    .service_advantages .row > *
+    {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .big .swiper-slide a
+    {
+        height: 350px;
+    }
+
+
+    .product_info .btns > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .product_info .gift .product .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .features .label
+    {
+        width: 173px;
+    }
+
+
+
+    /*-------------------
+        Advantages
+    -------------------*/
+    .advantages .row.inline
+    {
+        margin-bottom: -28px;
+        margin-left: 0;
+    }
+
+    .advantages .row.inline > *
+    {
+        width: 100%;
+        margin-bottom: 28px;
+        margin-left: 0;
+    }
+
+
+    .advantages .row.inline .item
+    {
+        display: flex;
+
+        text-align: left;
+
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .advantages .row.inline .item .icon
+    {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+
+    .advantages .row.inline .item .icon + *
+    {
+        width: calc(100% - 74px);
+
+        align-self: center;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .title
+    {
+        font-size: 25px;
+    }
+
+
+
+    /*-------------------
+        Brands slider
+    -------------------*/
+    .brands_slider .title
+    {
+        font-size: 27px;
+    }
+
+
+
+    /*-----------
+        Types
+    -----------*/
+    .types .item
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .data
+    {
+        width: 100%;
+        height: 282px;
+        padding: 24px 24px 40px;
+
+        text-align: center;
+    }
+
+
+    .stocks .gift
+    {
+        width: 100%;
+        padding: 24px;
+
+        text-align: center;
+    }
+
+    .stocks .gift .link
+    {
+        margin-top: 20px;
+    }
+
+
+    .stocks .swiper-horizontal > .swiper-pagination-bullets,
+    .stocks .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .stocks .swiper-pagination-custom,
+    .stocks .swiper-pagination-fraction
+    {
+        top: 260px;
+        bottom: auto;
+
+        justify-content: center;
+    }
+
+
+
+    /*-----------------------
+        Brand collections
+    -----------------------*/
+    .brand_collections .item
+    {
+        line-height: calc(100% + 10px);
+
+        padding: 12px;
+    }
+
+
+
+    /*-----------------
+        Video block
+    -----------------*/
+    .video_block .video_link .thumb
+    {
+        padding-bottom: 65%;
+    }
+
+
+
+    /*------------------
+        Promo brands
+    ------------------*/
+    .promo_brands .data
+    {
+        padding-bottom: 0;
+    }
+
+
+    .promo_brands .images .link a
+    {
+        padding: 16px 20px;
+    }
+
+
+    .promo_brands .swiper-horizontal > .swiper-pagination-bullets,
+    .promo_brands .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .promo_brands .swiper-pagination-custom,
+    .promo_brands .swiper-pagination-fraction
+    {
+        bottom: 28px;
+    }
+
+
+    .promo_brands .swiper-button-prev
+    {
+        right: auto;
+        bottom: -10px;
+        left: 50%;
+
+        display: none !important;
+
+        margin-right: 0;
+        margin-left: -55px;
+    }
+
+    .promo_brands .swiper-button-next
+    {
+        right: 50%;
+        bottom: -10px;
+
+        display: none !important;
+
+        margin-right: -55px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .swiper
+    {
+        padding: 0;
+    }
+
+
+    .history .swiper-slide
+    {
+        width: calc(100vw - 48px);
+
+        text-align: center;
+    }
+
+
+    .history .data .thumb
+    {
+        width: 100%;
+        height: 140px;
+    }
+
+    .history .data .thumb + *
+    {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+
+    /*-------------------
+        Find boutique
+    -------------------*/
+    .find_boutique .title
+    {
+        font-size: 30px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .product
+    {
+        padding: 19px;
+
+        justify-content: space-between;
+    }
+
+
+    .cart_info .product .amount,
+    .cart_info .product .amount + .price
+    {
+        margin-left: 0 !important;
+    }
+
+
+    .cart_info .product .btns
+    {
+        top: 15px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .entity
+    {
+        margin-top: 0;
+    }
+
+    .checkout_info .entity .info
+    {
+        margin-bottom: -20px;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .discounts > *
+    {
+        width: calc(50% - 10px);
+    }
+
+    .lk_info .discounts > *.you
+    {
+        width: calc(100% - 10px);
+    }
+
+
+    .lk_info .personal .form .entity
+    {
+        margin-bottom: -20px;
+    }
+
+
+    .lk_info .personal .form .margin_top
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*---------------
+        Dots head
+    ---------------*/
+    .dots_head .title
+    {
+        font-size: 30px;
+    }
+
+
+
+    /*-----------------
+        Points sale
+    -----------------*/
+    .points_sale .points_filter
+    {
+        margin-left: 0;
+    }
+
+    .points_sale .points_filter > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        Info block
+    ----------------*/
+    .info_block .title
+    {
+        font-size: 27px;
+    }
+
+
+
+    /*-----------------
+        Info slider
+    -----------------*/
+    .info_slider .title
+    {
+        font-size: 30px;
+    }
+
+
+
+    /*----------------------
+        Promo collection
+    ----------------------*/
+    .promo_collection .promo_products
+    {
+        display: block;
+    }
+
+    .promo_collection .promo_products .product_wrap
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .phones
+    {
+        display: block;
+    }
+
+
+    footer .phone + .phone
+    {
+        margin-top: 10px;
+    }
+
+
+    footer .bottom .sep
+    {
+        display: none;
+    }
+
+
+    footer .copyright
+    {
+        width: 100%;
+    }
+
+    footer .copyright ~ .copyright
+    {
+        margin-top: 5px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px;
+    }
+}
