@@ -26,6 +26,7 @@ $(() => {
 		new Swiper('.main_slider .swiper', {
 			loop: true,
 			speed: 750,
+			autoHeight: true,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
@@ -372,6 +373,7 @@ $(() => {
 		new Swiper('.brands_slider .swiper', {
 			loop: true,
 			speed: 750,
+			autoHeight: true,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
@@ -712,6 +714,14 @@ $(() => {
 	})
 
 
+	// Товар в корзину
+	$('.product .cart_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
 	// Боковая колонка - Фильтр
 	$('.filter_btn, aside .mob_close_btn').click(function (e) {
 		e.preventDefault()
@@ -789,6 +799,12 @@ $(() => {
 			from: parseInt($('.filter .price_range input.from').val().replace(/\s/g, '')),
 			to: parseInt($('.filter .price_range input.to').val().replace(/\s/g, ''))
 		})
+	})
+
+
+	// Фиксация блока
+	$('.sticky_kit').stick_in_parent({
+		recalc_every: true
 	})
 
 
@@ -1135,6 +1151,22 @@ $(() => {
 
 
 
+$(window).on('load', () => {
+	// Фикс. шапка
+	headerInit = true,
+		headerHeight = $('header').outerHeight(),
+		offsetTop = $(window).scrollTop()
+
+	$('header').wrap('<div class="header_wrap"></div>')
+	$('.header_wrap').height(headerHeight)
+
+	headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+})
+
+
+
 $(window).on('scroll', () => {
 	// Кнопка 'Вверх'
 	$(window).scrollTop() > $(window).innerHeight()
@@ -1145,6 +1177,19 @@ $(window).on('scroll', () => {
 	$(window).scrollTop() > $(window).innerHeight()
 		? $('.fixed_product_info').fadeIn(300)
 		: $('.fixed_product_info').fadeOut(200)
+
+	// Фикс. шапка
+	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+
+	if (typeof offsetTop !== 'undefined') {
+		$(window).scrollTop() < offsetTop
+			? $('header').addClass('fixed_show')
+			: $('header').removeClass('fixed_show')
+
+		offsetTop = $(window).scrollTop()
+	}
 })
 
 
@@ -1164,6 +1209,22 @@ $(window).on('resize', () => {
 
 		// Бренды
 		brandsSlider()
+
+
+		// Фикс. шапка
+		headerInit = false
+		$('.header_wrap').height('auto')
+
+		setTimeout(() => {
+			headerInit = true
+			headerHeight = $('header').outerHeight()
+
+			$('.header_wrap').height(headerHeight)
+
+			headerInit && $(window).scrollTop() > headerHeight
+				? $('header').addClass('fixed')
+				: $('header').removeClass('fixed')
+		}, 100)
 
 
 		// Перезапись ширины окна

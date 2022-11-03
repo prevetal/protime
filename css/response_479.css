@@ -205,41 +205,20 @@
     /*-----------------
         Main slider
     -----------------*/
-    .main_slider .swiper-slide
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .main_slider .cont
-    {
-        min-height: 0;
-        padding: 0;
-
-        order: 2;
-    }
-
-
-    .main_slider .data
-    {
-        width: 100%;
-        min-height: 204px;
-        padding: 24px 24px 68px;
-    }
-
-
     .main_slider .title
     {
-        font-size: 27px;
+        font-size: 25px;
     }
 
 
     .main_slider .product
     {
-        display: none;
-
         width: 100%;
+    }
+
+    .main_slider .product .brand
+    {
+        display: none;
     }
 
 
@@ -346,6 +325,15 @@
     .products .row > *
     {
         width: 100%;
+    }
+
+
+    .products .product .buy_btn
+    {
+        font-size: 10px;
+
+        width: 152px;
+        height: 40px;
     }
 
 
@@ -562,7 +550,7 @@
     -------------------*/
     .brands_slider .title
     {
-        font-size: 27px;
+        font-size: 25px;
     }
 
 

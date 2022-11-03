@@ -242,6 +242,13 @@
     }
 
 
+    .products .product .cart_btn
+    {
+        top: 19px;
+        right: 60px;
+    }
+
+
     .products .product .favorite_btn
     {
         top: 20px;

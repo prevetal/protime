@@ -1587,13 +1587,18 @@ header .menu_item:hover .sub_menu .tab_content.active
 
 header .sub_menu .banner
 {
+    color: var(--text_color);
+
     position: relative;
 
+    display: block;
     overflow: hidden;
 
     height: 300px;
     margin-top: 35px;
     margin-bottom: -35px;
+
+    text-decoration: none;
 
     background: #ddd;
 }
@@ -1758,6 +1763,40 @@ header .sub_menu .cols .col a:hover,
 header .sub_menu .cols .col a.active
 {
     color: #707070;
+}
+
+
+
+header.fixed_show
+{
+    position: fixed;
+
+    margin: 0;
+    padding: 20px 0;
+
+    animation: moveDown .5s;
+
+    background: var(--bg);
+}
+
+
+header.fixed_show .logo
+{
+    top: 20px;
+}
+
+header.fixed_show .menu
+{
+    margin-top: 20px;
+}
+
+
+@keyframes moveDown
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
 }
 
 
@@ -3586,6 +3625,14 @@ aside .mob_close_btn svg
 }
 
 
+.main_slider .mob_img
+{
+    display: none;
+
+    width: 100%;
+}
+
+
 .main_slider .cont
 {
     display: flex;
@@ -3687,6 +3734,10 @@ aside .mob_close_btn svg
     line-height: 22px;
 
     width: 100%;
+}
+
+.main_slider .product > * + .link
+{
     margin-top: 25px;
 }
 
@@ -4855,6 +4906,9 @@ aside .mob_close_btn svg
 
 .products .row > *
 {
+    display: flex;
+    flex-direction: column;
+
     width: 25%;
     margin-bottom: 40px;
     margin-left: 0;
@@ -4973,6 +5027,62 @@ aside .mob_close_btn svg
 }
 
 .products .product .favorite_btn.active
+{
+    color: #a8a8a8;
+
+    transform: scale(1);
+}
+
+
+.products .product .cart_btn
+{
+    color: #a9a9a9;
+
+    position: absolute;
+    z-index: 3;
+    top: 29px;
+    right: 76px;
+
+    display: flex;
+
+    width: 23px;
+    height: 22px;
+
+    transition: .2s linear;
+
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.products .product .cart_btn .icon
+{
+    display: block;
+
+    width: 23px;
+    height: 22px;
+}
+
+.products .product .cart_btn .icon + .icon,
+.products .product .cart_btn.active .icon
+{
+    display: none;
+}
+
+.products .product .cart_btn.active .icon + .icon
+{
+    display: block;
+}
+
+.products .product .cart_btn:hover
+{
+    color: #000;
+
+    transform: scale(1.2);
+}
+
+.products .product .cart_btn.active
 {
     color: #a8a8a8;
 
@@ -9273,7 +9383,7 @@ aside .mob_close_btn svg
 {
     margin-bottom: 90px;
 
-    background: #000;
+    background: #f9f9f9;
 }
 
 
@@ -9297,6 +9407,14 @@ aside .mob_close_btn svg
     height: 100%;
 
     object-fit: cover;
+}
+
+
+.brands_slider .mob_img
+{
+    display: none;
+
+    width: 100%;
 }
 
 

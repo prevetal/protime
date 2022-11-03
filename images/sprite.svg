@@ -27,6 +27,10 @@
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" id="ic_calendar">
     <path d="M3.5,6a.5.5,0,1,1-.5.5A.5.5,0,0,1,3.5,6m3,0a.5.5,0,1,0,.5.5A.5.5,0,0,0,6.5,6m3,0a.5.5,0,1,0,.5.5A.5.5,0,0,0,9.5,6m3,0a.5.5,0,1,0,.5.5.5.5,0,0,0-.5-.5m-9,3a.5.5,0,1,0,.5.5A.5.5,0,0,0,3.5,9m3,0a.5.5,0,1,0,.5.5A.5.5,0,0,0,6.5,9m3,0a.5.5,0,1,0,.5.5A.5.5,0,0,0,9.5,9m3,0a.5.5,0,1,0,.5.5.5.5,0,0,0-.5-.5m-9,3a.5.5,0,1,0,.5.5.5.5,0,0,0-.5-.5m3,0a.5.5,0,1,0,.5.5.5.5,0,0,0-.5-.5m3,0a.5.5,0,1,0,.5.5.5.5,0,0,0-.5-.5m3,0a.5.5,0,1,0,.5.5.5.5,0,0,0-.5-.5M15,2H14V3h1V15H1V3H2V2H1A1,1,0,0,0,0,3V15a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1M11,2H5V3h6ZM4,4.5V.5a.5.5,0,0,0-1,0v4a.5.5,0,0,0,1,0m9,0V.5a.5.5,0,0,0-1,0v4a.5.5,0,0,0,1,0" fill="currentColor"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 20" id="ic_cart2">
+    <path d="M9,1a4,4,0,0,1,3.86,3h1A5,5,0,0,0,4.1,4h1A4,4,0,0,1,9,1" fill="currentColor"></path>
+    <rect y="6" width="18" height="14" fill="currentColor"></rect>
+  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 20" id="ic_cart">
     <path d="M9,1a4,4,0,0,1,3.86,3h1A5,5,0,0,0,4.1,4h1A4,4,0,0,1,9,1" fill="currentColor"></path>
     <path d="M17,19H1V7H17ZM18,6H0V20H18Z" fill="currentColor"></path>
@@ -85,15 +89,15 @@
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.56 38.35" id="ic_download">
     <path d="M18.78,0h0A18.78,18.78,0,0,0,0,18.78v.79a18.78,18.78,0,0,0,37.56,0v-.79A18.78,18.78,0,0,0,18.78,0m-4,15.49V8.7h8v6.79h4.71l-8.69,9.16-8.69-9.16ZM27.9,29.65H9.66V27.3H27.9Z" transform="translate(0 0)" fill="currentColor"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="ic_edit">
-    <path d="M6.21,12l7.55-7.55.7.71L6.92,12.7l-.82.12Zm8.25-8.25,1.42-1.42.71.71L15.17,4.45ZM13.76,3l-.71.71L5.27,11.53,4.92,14l2.47-.35,7.78-7.78.71-.71L18,3,15.88.92Z" transform="translate(0 0)" fill="currentColor"></path>
-    <polygon points="0 0 0 17 16 17 16 6.45 15.88 6.58 15 7.45 15 16 1 16 1 1 14.38 1 15.17 0.21 15.38 0 0 0" fill="currentColor"></polygon>
-  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10.49 8.4" id="ic_email">
     <path d="M5.7,5.17v0a.5.5,0,0,1-.17.11h0l-.1,0h0l-.1,0h0a.62.62,0,0,1-.17-.11s0,0,0,0l-.45-.42L.7,8.34A1.14,1.14,0,0,0,1,8.4H9.47a1.13,1.13,0,0,0,.32-.06L6,4.87Z" transform="translate(0 0)" fill="currentColor"></path>
     <path d="M.09.61A1,1,0,0,0,0,1V7.37a1,1,0,0,0,.08.38L4,4.17Z" transform="translate(0 0)" fill="currentColor"></path>
     <path d="M9.93.11A1,1,0,0,0,9.47,0H1A1.26,1.26,0,0,0,.75,0L5.37,4.31Z" transform="translate(0 0)" fill="currentColor"></path>
     <path d="M10.46.78,6.66,4.29l3.76,3.46a1,1,0,0,0,.07-.38V1a1,1,0,0,0,0-.25" transform="translate(0 0)" fill="currentColor"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="ic_edit">
+    <path d="M6.21,12l7.55-7.55.7.71L6.92,12.7l-.82.12Zm8.25-8.25,1.42-1.42.71.71L15.17,4.45ZM13.76,3l-.71.71L5.27,11.53,4.92,14l2.47-.35,7.78-7.78.71-.71L18,3,15.88.92Z" transform="translate(0 0)" fill="currentColor"></path>
+    <polygon points="0 0 0 17 16 17 16 6.45 15.88 6.58 15 7.45 15 16 1 16 1 1 14.38 1 15.17 0.21 15.38 0 0 0" fill="currentColor"></polygon>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.28 17.9" id="ic_favorite">
     <path d="M13.76,1.5A4.94,4.94,0,0,1,16,2,5.35,5.35,0,0,1,18.6,5.45a5.5,5.5,0,0,1-.77,4.47h0l0,.09h0c-.53.86-3.43,3.55-7.5,7l-.14-.19L10,17c-4.07-3.42-7-6.11-7.49-7h0l0-.09h0a5.46,5.46,0,0,1-.77-4.47A5.35,5.35,0,0,1,4.24,2,4.94,4.94,0,0,1,6.52,1.5a7.4,7.4,0,0,1,3.18.81l.44.21.44-.21a7.4,7.4,0,0,1,3.18-.81m0-1a8.39,8.39,0,0,0-3.62.91A8.39,8.39,0,0,0,6.52.5a6,6,0,0,0-2.74.65A6.37,6.37,0,0,0,.71,5.2a6.5,6.5,0,0,0,.91,5.29l0-.06,0,.09,0,0c.88,1.5,6.73,6.42,8.51,7.91h0c1.79-1.49,7.64-6.41,8.51-7.91l0,0,.06-.09a.21.21,0,0,1,0,.06,6.5,6.5,0,0,0,.92-5.29,6.35,6.35,0,0,0-3.08-4.05A6,6,0,0,0,13.76.5" transform="translate(-0.5 -0.5)" fill="currentColor"></path>
@@ -109,6 +113,12 @@
     <path d="M14.66,7a2.5,2.5,0,0,0-2.45,2H0v1H12.21a2.5,2.5,0,0,0,4.9,0H20V9H17.11a2.51,2.51,0,0,0-2.45-2m0,4a1.5,1.5,0,1,1,1.5-1.5,1.5,1.5,0,0,1-1.5,1.5" transform="translate(0)" fill="currentColor"></path>
     <path d="M7.79,2a2.5,2.5,0,0,0-4.9,0H0V3H2.89a2.5,2.5,0,0,0,4.9,0H20V2ZM5.34,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,5.34,4" transform="translate(0)" fill="currentColor"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 19" id="ic_gift">
+    <path d="M2,8H15V18H2ZM1,19H16V7H1Z"></path>
+    <path d="M1,5H16V7H1ZM0,8H17V4H0Z" fill="currentColor"></path>
+    <path d="M6,1A2,2,0,0,1,8,3V4H4V3A2,2,0,0,1,6,1M6,0A3,3,0,0,0,3,3V5H9V3A3,3,0,0,0,6,0" fill="currentColor"></path>
+    <path d="M11,1a2,2,0,0,1,2,2V4H9V3a2,2,0,0,1,2-2m0-1A3,3,0,0,0,8,3V5h6V3a3,3,0,0,0-3-3" fill="currentColor"></path>
+  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 20" id="ic_free_delivery">
     <rect x="10" y="1" width="1" height="1" fill="currentColor"></rect>
     <rect x="9" width="1" height="1" fill="currentColor"></rect>
@@ -119,12 +129,6 @@
     <rect x="4" y="16" width="6" height="1" fill="currentColor"></rect>
     <polygon points="14 3 14 4 16 4 16 19 1 19 1 4 3 4 3 3 0 3 0 20 17 20 17 3 14 3" fill="currentColor"></polygon>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 19" id="ic_gift">
-    <path d="M2,8H15V18H2ZM1,19H16V7H1Z"></path>
-    <path d="M1,5H16V7H1ZM0,8H17V4H0Z" fill="currentColor"></path>
-    <path d="M6,1A2,2,0,0,1,8,3V4H4V3A2,2,0,0,1,6,1M6,0A3,3,0,0,0,3,3V5H9V3A3,3,0,0,0,6,0" fill="currentColor"></path>
-    <path d="M11,1a2,2,0,0,1,2,2V4H9V3a2,2,0,0,1,2-2m0-1A3,3,0,0,0,8,3V5h6V3a3,3,0,0,0-3-3" fill="currentColor"></path>
-  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.66 19.66" id="ic_instagram">
     <path d="M9.83,6.66A3.18,3.18,0,1,0,13,9.83,3.19,3.19,0,0,0,9.83,6.66" transform="translate(0 0)" fill="currentColor"></path>
     <path d="M14.71,0H5A4.94,4.94,0,0,0,0,4.9v9.86a4.94,4.94,0,0,0,5,4.9h9.76a4.94,4.94,0,0,0,4.95-4.9V4.9A4.94,4.94,0,0,0,14.71,0M9.83,15.46a5.63,5.63,0,1,1,5.69-5.63,5.66,5.66,0,0,1-5.69,5.63M15.72,5a1.44,1.44,0,1,1,1.45-1.43A1.44,1.44,0,0,1,15.72,5" transform="translate(0 0)" fill="currentColor"></path>
@@ -132,11 +136,6 @@
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8.68 11.42" id="ic_location">
     <path d="M4.34,0A4.34,4.34,0,0,0,0,4.34C0,6.49,2,8.29,2.36,8.63a8,8,0,0,1,2,2.79,8,8,0,0,1,2-2.79c.33-.34,2.36-2.14,2.36-4.29A4.34,4.34,0,0,0,4.34,0m0,6.43A2.09,2.09,0,1,1,6.43,4.34,2.1,2.1,0,0,1,4.34,6.43" transform="translate(0 0)" fill="currentColor"></path>
     <path d="M4.34,3.11A1.23,1.23,0,1,0,5.57,4.34,1.23,1.23,0,0,0,4.34,3.11" transform="translate(0 0)" fill="currentColor"></path>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11" id="ic_menu">
-    <rect width="12" height="1"></rect>
-    <rect y="5" width="12" height="1"></rect>
-    <rect y="10" width="12" height="1" fill="currentColor"></rect>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="ic_logout">
     <polygon points="5 7 5 8 4 8 4 9 5 9 5 10 6 10 6 9 18 9 18 8 6 8 6 7 5 7" fill="currentColor"></polygon>
@@ -150,22 +149,27 @@
     <rect x="9" y="13" width="1" height="1" fill="currentColor"></rect>
     <polygon points="0 0 0 17 15 17 15 14 14 14 14 16 1 16 1 1 14 1 14 3 15 3 15 0 0 0" fill="currentColor"></polygon>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="ic_question">
-    <path d="M10,1a9,9,0,1,1-9,9,9,9,0,0,1,9-9m0-1A10,10,0,1,0,20,10,10,10,0,0,0,10,0" transform="translate(0)" fill="currentColor"></path>
-    <path d="M9.16,12.19a4.21,4.21,0,0,1,.18-1.28,3.26,3.26,0,0,1,.7-1l.89-.93a2,2,0,0,0,.58-1.39,1.58,1.58,0,0,0-.38-1.12A1.41,1.41,0,0,0,10,6a1.66,1.66,0,0,0-1.12.37,1.25,1.25,0,0,0-.43,1H7.23A2.29,2.29,0,0,1,8,5.6a2.92,2.92,0,0,1,2-.68,2.79,2.79,0,0,1,2,.69,2.52,2.52,0,0,1,.72,1.9,3.45,3.45,0,0,1-1.11,2.36l-.74.73a2.31,2.31,0,0,0-.5,1.59ZM9.1,14.36a.74.74,0,0,1,.19-.52.7.7,0,0,1,.56-.21.73.73,0,0,1,.56.21.79.79,0,0,1,.19.52.68.68,0,0,1-.75.72.73.73,0,0,1-.56-.2.73.73,0,0,1-.19-.52" transform="translate(0)" fill="currentColor"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11" id="ic_menu">
+    <rect width="12" height="1"></rect>
+    <rect y="5" width="12" height="1"></rect>
+    <rect y="10" width="12" height="1" fill="currentColor"></rect>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8.55 8.76" id="ic_phone">
     <path d="M7.75,7.16,6.08,5.58a.4.4,0,0,0-.26-.12.46.46,0,0,0-.3.11L5.12,6A.94.94,0,0,1,4,5.8L2.81,4.54a.78.78,0,0,1-.06-1.06c.1-.1.36-.38.47-.47a.44.44,0,0,0,.14-.29.49.49,0,0,0-.11-.31L1.8.5A.46.46,0,0,0,1.48.33a.44.44,0,0,0-.36.15l0,0a3,3,0,0,0-1.1,2C0,4.6,3.74,8.63,5.55,8.75c.56,0,1.11-.1,2.15-.94a.44.44,0,0,0,.18-.32.43.43,0,0,0-.13-.33" transform="translate(0 0)" fill="currentColor"></path>
     <path d="M8.54,4.41a.3.3,0,0,1-.27.22.32.32,0,0,1-.35-.28,4.24,4.24,0,0,0-3-3.71L4.8.62A.31.31,0,0,1,4.58.23.33.33,0,0,1,5,0l.08,0a4.86,4.86,0,0,1,3.5,4.26.25.25,0,0,1,0,.12" transform="translate(0 0)" fill="currentColor"></path>
     <path d="M6.89,4.27a.3.3,0,0,1-.25.22.31.31,0,0,1-.36-.25,2.66,2.66,0,0,0-1.6-2,.31.31,0,1,1,.24-.58,3.28,3.28,0,0,1,2,2.42.38.38,0,0,1,0,.15" transform="translate(0 0)" fill="currentColor"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.7 19.7" id="ic_search">
-    <path d="M11.88,1A6.82,6.82,0,1,1,5.07,7.82,6.83,6.83,0,0,1,11.88,1m0-1A7.82,7.82,0,1,0,19.7,7.82,7.82,7.82,0,0,0,11.88,0" transform="translate(0)"></path>
-    <line x1="5.1" y1="14.61" x2="0.35" y2="19.35" fill="none" stroke="currentColor" stroke-miterlimit="10"></line>
-  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="ic_save">
     <path d="M4,1H14V7H4ZM15,8V1h.44L17,2.44V16H1V1H3V8ZM0,0V17H18V2L15.83,0Z" transform="translate(0 0)" fill="currentColor"></path>
     <rect x="11" y="2" width="1" height="4" fill="currentColor"></rect>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="ic_question">
+    <path d="M10,1a9,9,0,1,1-9,9,9,9,0,0,1,9-9m0-1A10,10,0,1,0,20,10,10,10,0,0,0,10,0" transform="translate(0)" fill="currentColor"></path>
+    <path d="M9.16,12.19a4.21,4.21,0,0,1,.18-1.28,3.26,3.26,0,0,1,.7-1l.89-.93a2,2,0,0,0,.58-1.39,1.58,1.58,0,0,0-.38-1.12A1.41,1.41,0,0,0,10,6a1.66,1.66,0,0,0-1.12.37,1.25,1.25,0,0,0-.43,1H7.23A2.29,2.29,0,0,1,8,5.6a2.92,2.92,0,0,1,2-.68,2.79,2.79,0,0,1,2,.69,2.52,2.52,0,0,1,.72,1.9,3.45,3.45,0,0,1-1.11,2.36l-.74.73a2.31,2.31,0,0,0-.5,1.59ZM9.1,14.36a.74.74,0,0,1,.19-.52.7.7,0,0,1,.56-.21.73.73,0,0,1,.56.21.79.79,0,0,1,.19.52.68.68,0,0,1-.75.72.73.73,0,0,1-.56-.2.73.73,0,0,1-.19-.52" transform="translate(0)" fill="currentColor"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.7 19.7" id="ic_search">
+    <path d="M11.88,1A6.82,6.82,0,1,1,5.07,7.82,6.83,6.83,0,0,1,11.88,1m0-1A7.82,7.82,0,1,0,19.7,7.82,7.82,7.82,0,0,0,11.88,0" transform="translate(0)"></path>
+    <line x1="5.1" y1="14.61" x2="0.35" y2="19.35" fill="none" stroke="currentColor" stroke-miterlimit="10"></line>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 13" id="ic_select_arr">
     <rect x="5" y="5" width="1" height="1" fill="currentColor"></rect>
@@ -197,6 +201,10 @@
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41.13 34.49" id="ic_telegram">
     <path d="M41,3.14,34.8,32.41C34.34,34.48,33.11,35,31.38,34l-9.46-7-4.56,4.39a2.38,2.38,0,0,1-1.9.92l.68-9.63L33.67,6.9c.76-.68-.17-1.06-1.19-.38L10.81,20.16,1.49,17.24c-2-.63-2.07-2,.42-3L38.39.18c1.69-.63,3.17.38,2.62,3" transform="translate(0 0)" fill="currentColor"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15 17" id="ic_time">
+    <path d="M4,16.5H4a.5.5,0,0,1,.5-.5h6a.5.5,0,0,1,0,1h-6a.5.5,0,0,1-.5-.5" fill="currentColor"></path>
+    <path d="M7.5,0A7.5,7.5,0,1,0,15,7.5,7.5,7.5,0,0,0,7.5,0m-6,8A.5.5,0,1,1,2,7.5a.5.5,0,0,1-.5.5m6,6a.5.5,0,1,1,.5-.5.5.5,0,0,1-.5.5m5-6h-5A.5.5,0,0,1,7,7.5v-5a.5.5,0,0,1,1,0V7h4.5a.5.5,0,0,1,0,1" fill="currentColor"></path>
+  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.26 19.08" id="ic_user">
     <path d="M10.13,1a5.15,5.15,0,0,1,5,5.31,5.15,5.15,0,0,1-5,5.3,5.15,5.15,0,0,1-5-5.3,5.15,5.15,0,0,1,5-5.31m0-1a6.14,6.14,0,0,0-6,6.31,6.14,6.14,0,0,0,6,6.3,6.14,6.14,0,0,0,6-6.3,6.14,6.14,0,0,0-6-6.31" transform="translate(0 0)" fill="currentColor"></path>
     <path d="M4.29,11.93A11,11,0,0,0,0,19.08H1a10,10,0,0,1,4-6.43,8.15,8.15,0,0,1-.72-.72" transform="translate(0 0)" fill="currentColor"></path>
@@ -207,15 +215,11 @@
     <rect x="7.5" y="3.14" width="1" height="5.24" fill="currentColor"></rect>
     <rect x="7.5" y="7.5" width="5.24" height="1" fill="currentColor"></rect>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15 17" id="ic_time">
-    <path d="M4,16.5H4a.5.5,0,0,1,.5-.5h6a.5.5,0,0,1,0,1h-6a.5.5,0,0,1-.5-.5" fill="currentColor"></path>
-    <path d="M7.5,0A7.5,7.5,0,1,0,15,7.5,7.5,7.5,0,0,0,7.5,0m-6,8A.5.5,0,1,1,2,7.5a.5.5,0,0,1-.5.5m6,6a.5.5,0,1,1,.5-.5.5.5,0,0,1-.5.5m5-6h-5A.5.5,0,0,1,7,7.5v-5a.5.5,0,0,1,1,0V7h4.5a.5.5,0,0,1,0,1" fill="currentColor"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.7 20.93" id="ic_video_play">
+    <path d="M1,1.66l16.57,8.8L1,19.27ZM0,0V20.93L19.7,10.46Z" transform="translate(0 0)" fill="currentColor"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26.74 16.03" id="ic_vkontakte">
     <path d="M14.28,16c.89,0,.89-1.28.89-1.78A1.91,1.91,0,0,1,17,12.46c.89,0,2.41,1.53,3.56,2.67.89.89.89.89,1.78.89H25a1.8,1.8,0,0,0,1.78-1.78c0-.56-.61-1.5-2.67-3.56-1.78-1.78-2.69-.86,0-4.45C25.71,4,26.9,2.06,26.7,1.49S21.94.08,21.4.89a32.62,32.62,0,0,0-2.67,4.45C17.84,7.12,17.75,8,17,8s-.89-1.73-.89-2.67c0-2.94.42-5-.89-5.34H12.5A5.14,5.14,0,0,0,9.83.89s-1.11.86-.89.89,1.78-.37,1.78.89V4.45S10.72,8,9.83,8,7.16,4.45,5.38,1.78C4.68.73,4.49.89,3.6.89S1.82.93.93.93s-1,.57-.89.85C1.82,6.23,3.09,9,6.48,12.55c3.1,3.23,5.17,3.4,6.91,3.47.44,0,0,0,.89,0" transform="translate(0 0)" fill="currentColor"></path>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.7 20.93" id="ic_video_play">
-    <path d="M1,1.66l16.57,8.8L1,19.27ZM0,0V20.93L19.7,10.46Z" transform="translate(0 0)" fill="currentColor"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 34.33 34.49" id="ic_whatsapp">
     <path d="M29.33,5A17.1,17.1,0,0,0,.14,17.09a17.18,17.18,0,0,0,2.28,8.55L0,34.49l9.06-2.38a17.11,17.11,0,0,0,8.17,2.09h0A17.1,17.1,0,0,0,29.33,5M25.6,23.2a4.4,4.4,0,0,1-2.89,2A5.8,5.8,0,0,1,20,25.06a25.55,25.55,0,0,1-2.43-.9c-4.28-1.85-7.08-6.16-7.3-6.45a8.3,8.3,0,0,1-1.74-4.42,4.76,4.76,0,0,1,1.5-3.56,1.54,1.54,0,0,1,1.13-.53H12c.26,0,.62-.1,1,.74s1.21,3,1.32,3.17a.77.77,0,0,1,0,.74,3.27,3.27,0,0,1-.43.72c-.21.25-.45.55-.64.75s-.44.44-.19.87a13.28,13.28,0,0,0,2.38,3,11.52,11.52,0,0,0,3.43,2.11c.43.22.68.18.93-.1s1.06-1.25,1.35-1.68.57-.35,1-.21S24.6,20.46,25,20.67s.71.32.82.5a3.7,3.7,0,0,1-.25,2" transform="translate(0 0)" fill="currentColor" fill-rule="evenodd"></path>
