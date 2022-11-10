@@ -1184,7 +1184,7 @@ $(window).on('scroll', () => {
 		: $('header').removeClass('fixed')
 
 	if (typeof offsetTop !== 'undefined') {
-		$(window).scrollTop() < offsetTop
+		$(window).scrollTop() < offsetTop && $(window).scrollTop() > headerHeight
 			? $('header').addClass('fixed_show')
 			: $('header').removeClass('fixed_show')
 
