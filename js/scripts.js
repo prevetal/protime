@@ -23,7 +23,7 @@ $(() => {
 
 	// Основной слайдер на главной
 	if ($('.main_slider .swiper').length) {
-		new Swiper('.main_slider .swiper', {
+		const mainSlider = new Swiper('.main_slider .swiper', {
 			loop: true,
 			speed: 750,
 			autoHeight: true,
@@ -32,6 +32,10 @@ $(() => {
 			slideVisibleClass: 'visible',
 			spaceBetween: 0,
 			slidesPerView: 1,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'bullets',
@@ -46,6 +50,27 @@ $(() => {
 				loadPrevNext: true
 			}
 		})
+
+		// Отслеживание в экране
+		const mainSliderBlock = document.querySelectorAll('.main_slider')
+
+		function mainSliderTracking(entries) {
+			for (const entry of entries) {
+
+				if (entry.intersectionRatio >= 0.9) {
+					mainSlider.params.autoHeight = true
+					mainSlider.updateAutoHeight(10)
+				} else {
+					mainSlider.params.autoHeight = false
+				}
+			}
+		}
+
+		const mainSliderObserver = new IntersectionObserver(mainSliderTracking, {
+			threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+		})
+
+		mainSliderBlock.forEach(element => mainSliderObserver.observe(element))
 	}
 
 
@@ -370,7 +395,7 @@ $(() => {
 
 	// Слайдер брендов
 	if ($('.brands_slider .swiper').length) {
-		new Swiper('.brands_slider .swiper', {
+		const brandsSlider = new Swiper('.brands_slider .swiper', {
 			loop: true,
 			speed: 750,
 			autoHeight: true,
@@ -379,6 +404,10 @@ $(() => {
 			slideVisibleClass: 'visible',
 			spaceBetween: 0,
 			slidesPerView: 1,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'bullets',
@@ -393,6 +422,27 @@ $(() => {
 				loadPrevNext: true
 			}
 		})
+
+		// Отслеживание в экране
+		const brandsSliderBlock = document.querySelectorAll('.brands_slider')
+
+		function brandsSliderTracking(entries) {
+			for (const entry of entries) {
+
+				if (entry.intersectionRatio >= 0.9) {
+					brandsSlider.params.autoHeight = true
+					brandsSlider.updateAutoHeight(10)
+				} else {
+					brandsSlider.params.autoHeight = false
+				}
+			}
+		}
+
+		const brandsSliderObserver = new IntersectionObserver(brandsSliderTracking, {
+			threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+		})
+
+		brandsSliderBlock.forEach(element => brandsSliderObserver.observe(element))
 	}
 
 

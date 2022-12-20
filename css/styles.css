@@ -3624,6 +3624,14 @@ aside .mob_close_btn svg
     object-fit: cover;
 }
 
+.main_slider .bg.relative
+{
+    position: relative;
+    z-index: 1;
+
+    height: auto;
+}
+
 
 .main_slider .mob_img
 {
