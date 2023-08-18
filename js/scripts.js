@@ -77,7 +77,7 @@ $(() => {
 	// Акции
 	if ($('.stocks .swiper').length) {
 		new Swiper('.stocks .swiper', {
-			loop: true,
+			loop: $('.stocks .swiper-slide').length > 1 ? true : false,
 			speed: 750,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -805,6 +805,8 @@ $(() => {
 
 		$(this).toggleClass('active')
 		parent.find('.data').slideToggle(300)
+
+		$('.sticky').trigger('sticky_kit:recalc')
 	})
 
 
