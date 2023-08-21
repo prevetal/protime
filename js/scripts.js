@@ -782,13 +782,13 @@ $(() => {
 		if (window.outerWidth < 1024) {
 			$('body').toggleClass('menu_open')
 		}
-
-		if (window.outerWidth > 1023) {
-			$('.sticky').stick_in_parent({
-				// recalc_every: true
-			})
-		}
 	})
+
+	if (window.outerWidth > 1023) {
+		$('.sticky').stick_in_parent({
+			// recalc_every: true
+		})
+	}
 
 
 	$('.mob_filter_btn').click(function (e) {
@@ -804,9 +804,7 @@ $(() => {
 		let parent = $(this).closest('.item')
 
 		$(this).toggleClass('active')
-		parent.find('.data').slideToggle(300)
-
-		$('.sticky').trigger('sticky_kit:recalc')
+		parent.find('.data').slideToggle(300, () => $('.filter.sticky').trigger('sticky_kit:recalc'))
 	})
 
 
