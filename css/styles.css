@@ -1364,12 +1364,31 @@ header .search .mini_modal.active
 
 header .search form
 {
+    position: relative;
+    z-index: 3;
+
     display: flex;
 
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+header .search form:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: calc(100% + 60px);
+    height: calc(100% + 40px);
+
+    content: '';
+    transform: translate(-50%, -50%);
 }
 
 

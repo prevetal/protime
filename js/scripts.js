@@ -1074,6 +1074,8 @@ $(() => {
 			$(modalId).addClass('active')
 
 			if (is_touch_device()) $('body').css('cursor', 'pointer')
+
+			setTimeout(() => $(modalId).find('.input').focus(), 100)
 		}
 	})
 
