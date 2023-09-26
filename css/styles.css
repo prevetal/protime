@@ -2103,24 +2103,19 @@ aside .mob_close_btn svg
 }
 
 
-.filter .item + .item
-{
-    margin-top: 15px;
-}
-
-
 
 .filter .name
 {
     font-size: 12px;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 16px;
 
     position: relative;
 
-    padding-right: 40px;
+    padding: 10px 40px 10px 8px;
 
     cursor: pointer;
+    transition: background .2s linear;
     text-transform: uppercase;
 }
 
@@ -2129,7 +2124,7 @@ aside .mob_close_btn svg
 {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 9px;
     bottom: 0;
 
     display: block;
@@ -2163,6 +2158,12 @@ aside .mob_close_btn svg
     height: 100%;
 }
 
+
+.filter .name:hover
+{
+    background: #f2f2f2;
+}
+
 .filter .name.active .icon:after
 {
     opacity: 0;
@@ -2174,14 +2175,13 @@ aside .mob_close_btn svg
 {
     display: none;
 
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 
 .filter .field + .field
 {
-    margin-top: 15px;
+    margin-top: 6px;
 }
 
 
@@ -2227,17 +2227,18 @@ aside .mob_close_btn svg
 
 .filter label
 {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 15px;
 
     position: relative;
 
     display: flex;
 
-    min-height: 18px;
-    padding-left: 28px;
+    min-height: 28px;
+    padding: 6px 10px 7px 36px;
 
     cursor: pointer;
+    transition: background .2s linear;
 
     align-content: center;
     align-items: center;
@@ -2253,15 +2254,18 @@ aside .mob_close_btn svg
 .filter label .check
 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 8px;
 
     display: flex;
 
     width: 18px;
     height: 18px;
 
+    transition: all .25s cubic-bezier(.4, 0, .23, 1) 0s;
+
     border: 1px solid #d8d8d8;
+    background: #fff;
 
     align-content: center;
     align-items: center;
@@ -2269,7 +2273,16 @@ aside .mob_close_btn svg
     justify-content: center;
 }
 
-.filter label .check svg
+.filter label .check span
+{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    display: block;
+}
+
+/* .filter label .check svg
 {
     display: block;
 
@@ -2279,12 +2292,91 @@ aside .mob_close_btn svg
     transition: opacity .2s linear;
 
     opacity: 0;
+} */
+
+
+.filter label:hover
+{
+    background: #f2f2f2;
 }
 
-.filter label input:checked + .check svg
+
+.filter label input:checked + .check
+{
+    animation: shrink-bounce .2s cubic-bezier(.4,0,.23,1);
+
+    border: 6px solid #000;
+    background-color: #000;
+}
+
+.filter label input:checked + .check:after
+{
+    position: absolute;
+    top: 2px;
+    left: -1px;
+
+    box-sizing: content-box;
+    width: 3px;
+    height: 7px;
+
+    content: '';
+    transform: rotate(45deg);
+    transform-origin: 0 100%;
+    animation: checkbox-check 125ms cubic-bezier(.4,0,.23,1) .25s forwards;
+
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+@keyframes shrink-bounce
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    33%
+    {
+        transform: scale(.85);
+    }
+    to
+    {
+        transform: scale(1);
+    }
+}
+
+@keyframes checkbox-check
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+
+        transform: translateZ(0) rotate(45deg);
+
+        border-color: #fff;
+    }
+    33%
+    {
+        width: .2em;
+        height: 0;
+
+        transform: translateZ(0) rotate(45deg);
+    }
+    to
+    {
+        width: .2em;
+        height: .5em;
+
+        transform: translate3d(0,-.5em,0) rotate(45deg);
+
+        border-color: #fff;
+    }
+}
+
+/* .filter label input:checked + .check svg
 {
     opacity: 1;
-}
+} */
 
 
 .filter .submit
