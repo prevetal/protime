@@ -1487,6 +1487,23 @@
 
 
 
+    /*---------------------
+        Filter selected
+    ---------------------*/
+    .filter_selected .row
+    {
+        margin-bottom: 12px;
+        margin-left: -12px;
+    }
+
+    .filter_selected .row > *
+    {
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -1501,10 +1518,4 @@
         width: 100%;
         margin-top: 15px;
     }
-
-
-
-    /*-----------
-        PopUp
-    -----------*/
 }

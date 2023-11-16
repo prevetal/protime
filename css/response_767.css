@@ -1257,6 +1257,36 @@
 
 
 
+    /*---------------------
+        Filter selected
+    ---------------------*/
+    .filter_selected .row
+    {
+        margin-bottom: 16px;
+        margin-left: -8px;
+    }
+
+    .filter_selected .row > *
+    {
+        margin-bottom: 8px;
+        margin-left: 8px;
+    }
+
+
+    .filter_selected .btn
+    {
+        font-size: 12px;
+
+        padding-left: 12px;
+    }
+
+    .filter_selected .btn .icon
+    {
+        margin-left: 12px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
